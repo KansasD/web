@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>Matriz de Riesgos Bavaria</h1>
+    <p>Para la elaboración de la matriz de riesgos de Bavaria, se realizó un análisis integral que abarcó seis áreas
+        clave: riesgos financieros, operativos, legales, de tecnología, reputacionales y ambientales. En cada una de
+        estas categorías se identificaron 20 riesgos relevantes, para fines de esta presentación se
+        seleccionaron los 10 riesgos más significativos de cada área, consolidando un total de 60 riesgos priorizados. A
+        partir de esta selección, se definió un plan de acción enfocado en 12 de los riesgos con mayor criticidad.</p>
+<div id="listaRiesgos">
+
+<h3>Riesgos Financieros <i class="fa-solid fa-coins"></i></h3> <br> 
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin1">
+   Posible insuficiencia de recaudo de cartera por falta de recursos económicos de los deudores.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin2">
+  Fondos insuficientes para cubrir sus obligaciones financieras y para financiar sus operaciones.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin3">
+    Cambios en las tasas de interés de sus obligaciones financieras.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin4">
+    Cambio en las tasas de cambio de países a las cuales exporta que puede afectar de manera positiva o negativa los ingresos.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin5">
+    El aumento de precios puede afectar los costos de producción de Bavaria, especialmente si no puede trasladar esos costos a los precios de venta. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin6">
+    Sobrecapacidad en la industria que pueda generar una competencia feroz y presiones sobre los precios.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin7">
+   Alta competitividad, con grandes jugadores como Heineken que disminuya la porción en el mercado.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin8">
+   Cambios en las preferencias de los consumidores, lo que podría afectar las ventas de Bavaria. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin9">
+    Cambios en leyes o regulaciones (como impuestos al alcohol o restricciones publicitarias) pueden afectar las operaciones o los márgenes de Bavaria.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Financieros" data-id="fin10">
+    Escándalos, mala calidad de productos, o problemas ambientales pueden dañar la imagen de la marca y afectar las ventas.
+  </label><br>
+
+<h3>Riesgos Operativos <i class="fa-solid fa-city"></i></h3><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope1">
+    Fallas en la maquinaria como el mal funcionamiento de equipos de producción, causando retrasos y pérdidas de producto.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope2">
+    Escasez de materias primas lo que puede resultar en la dificultad para obtener ingredientes clave (cebada, lúpulo, etc.) a tiempo y al precio adecuado.
+</label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope3">
+    Defectos en el producto como problemas de calidad en la cerveza, generando rechazos y pérdidas económicas.
+</label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope4">
+    Incumplimiento de normas sanitarias lo que puede llevar a sanciones por no cumplir con las regulaciones de higiene y seguridad alimentaria.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope5">
+    Paro de producción como huelgas, accidentes o problemas imprevistos que interrumpen la producción.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope6">
+    Retrasos en la entrega como los problemas logísticos que impiden la distribución oportuna de la cerveza.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope7">
+    Daños en el transporte como averías durante el traslado de la mercancía, generando pérdidas de producto.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope8">
+    Robos o pérdidas de inventario como hurtos de mercancía en almacenes o durante el transporte.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope9">
+    Incumplimiento de proveedores es probable que los proveedores que no cumplan con los plazos o las especificaciones acordadas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Operacionales" data-id="ope10">
+    Gestión ineficiente del inventario como el Exceso o la escasez de existencias, generando costos adicionales o pérdidas de ventas.
+  </label><br>
+
+ <h3>Riesgos Legales <i class="fa-solid fa-scale-unbalanced-flip"></i></h3><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg1">
+    Incumplimiento de leyes laborales lo que puede llevar a multas y demandas por violaciones a leyes de salarios mínimos, horas extras, seguridad laboral, discriminación, o acoso.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg2">
+    Violaciones de leyes ambientales como sanciones por contaminación, manejo inadecuado de residuos, o incumplimiento de permisos ambientales.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg3">
+    Incumplimiento de leyes de protección al consumidor como demandas por publicidad engañosa, productos defectuosos, o prácticas comerciales desleales.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg4">
+    Violaciones de leyes de propiedad intelectual como demandas por infracción de patentes, marcas registradas, o derechos de autor
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg5">
+    Incumplimiento de leyes tributarias como multas, intereses y sanciones por errores en la declaración de impuestos, o evasión fiscal.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg6">
+    Incumplimiento de regulaciones de seguridad como sanciones por no cumplir con las normas de seguridad para productos, instalaciones o procesos.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg7">
+    Incumplimiento contractual como demandas por incumplimiento de obligaciones contractuales, causando pérdidas económicas para la otra parte. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg8">
+    Disputas contractuales como costos legales y pérdidas económicas derivadas de interpretaciones ambiguas o desacuerdos en los contratos.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg9">
+    Falta de confidencialidad como pérdidas financieras y daños a la reputación por divulgación de información confidencial.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Legales" data-id="leg10">
+    Responsabilidad por productos defectuosos como demandas por lesiones o daños causados por productos defectuosos.
+  </label><br>
+
+<h3>Riesgos Tecnológicos <i class="fa-solid fa-laptop"></i></h3>  <br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec1">
+    Dependencia de sistemas automatizados de producción como la automatización en las plantas de producción ya que puede interrumpir la producción y afectar la cadena de suministro.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec2">
+    Obsolescencia de equipos tecnológicos es posible que los equipos actuales se queden obsoletos con las nuevas tecnologías, requiriendo inversiones constantes. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec3">
+    Vulnerabilidades en ciberseguridad por el aumento de amenazas cibernéticas ya que representa un riesgo para la integridad de los sistemas y la protección de datos. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec4">
+    La integración de sistemas ERP ya que la implementación y mantenimiento de estos sistemas son complejos y presentan desafíos en la integración y operación. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec5">
+    Gestión de datos y análisis ya que la recopilación y el análisis de grandes volúmenes de datos requieren sistemas robustos; errores pueden llevar a decisiones empresariales inadecuadas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec6">
+    Fallas en sistemas de logística y distribución ya que las interrupciones en los sistemas tecnológicos que gestionan la logística pueden afectar la entrega oportuna de productos. 
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec7">
+    Dependencia de proveedores tecnológicos externos, esta dependencia de terceros para servicios tecnológicos puede exponer a la empresa a problemas críticos.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec8">
+    Actualizaciones y mantenimiento de software, existe la necesidad constante de mantener actualizado el software para evitar vulnerabilidades y esto puede generar interrupciones si no se gestiona adecuadamente.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec9">
+    Capacitación del personal en nuevas tecnologías ya que la falta de las capacitaciones puede limitar la eficacia de las herramientas implementadas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Tecnológicos" data-id="tec10">
+    La implementación de inteligencia artificial puede presentar riesgos si los algoritmos no están bien diseñados o supervisados.
+  </label><br>
+
+<h3>Riesgos Reputacionales <i class="fa-solid fa-face-smile"></i></h3><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep1">
+    La falta de transparencia sobre procesos y decisiones puede generar desconfianza entre los consumidores y el público.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep2">
+    El compromiso de la empresa con causas sociales es un factor clave en la percepción pública. Un bajo nivel de implicación social puede afectar negativamente la reputación.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep3">
+    El trato ético a los empleados, la seguridad laboral y las condiciones de trabajo son fundamentales. Cualquier conflicto laboral o falta de derechos puede dañar la imagen.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep4">
+    Las empresas que no aplican prácticas sostenibles o que son acusadas de greenwashing pueden perder la confianza pública.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep5">
+    La ética empresarial afecta la percepción del público. Cualquier caso de corrupción o mala conducta puede tener efectos devastadores en la reputación.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep6">
+    La percepción sobre la efectividad, ética y valores de los líderes de la empresa influye en la imagen pública.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep7">
+     Las empresas que promueven la diversidad y la inclusión suelen gozar de una buena reputación, mientras que la falta de estas puede ser motivo de críticas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep8">
+     Ser reconocido con premios de calidad, innovación o responsabilidad social mejora significativamente la percepción de la marca.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep9">
+    La calidad constante y alta de los productos es crucial. Los fallos o problemas de calidad generan rápidamente desconfianza en la marca.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Reputacionales" data-id="rep10">
+     Las condiciones laborales en las fábricas, el salario justo y el trato humano son factores reputacionales importantes.
+  </label><br>
+
+<h3>Riesgos Ambientales <i class="fa-solid fa-seedling"></i></h3><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb1">
+    Escasez de agua.
+  </label><br>
+
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb2">
+    Contaminación de fuentes hídricas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb3">
+    Generación excesiva de CO₂ y huella de carbono.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb4">
+    Aumento del precio de insumos por cambio climático.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb5">
+    Fenómenos extremos (El Niño / La Niña).
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb6">
+    Variabilidad climática
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb7">
+    Residuos sólidos mal gestionados.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb8">
+    Desastres naturales.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb9">
+    Contaminación cruzada en procesos de reciclaje de botellas.
+  </label><br>
+  
+  <label>
+    <input type="checkbox" onchange="agregarRiesgo(this)" data-area="Ambientales" data-id="amb10">
+    Contaminación por transporte.
+  </label><br>
+
+</div>  
+
+    <h1>Matriz de Riesgos</h1>
+
+    <table id="tablaRiesgos">
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Riesgo</th>
+                <th>Probabilidad (1-5)</th>
+                <th>Impacto (1-5)</th>
+                <th>Nivel</th>
+                <th>Color</th>
+                <th>Plan de Acción</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+
+    </table>
+
+<script src="script.js"></script>
+</body>
+
+</html>
